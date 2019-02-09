@@ -1,0 +1,16 @@
+PODS:
+  - Swinject (2.5.0)
+
+DEPENDENCIES:
+  - Swinject
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Swinject
+
+SPEC CHECKSUMS:
+  Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
+
+PODFILE CHECKSUM: 6cb3dc7f8e486d8aba29de780f195fced9464f69
+
+COCOAPODS: 1.5.3

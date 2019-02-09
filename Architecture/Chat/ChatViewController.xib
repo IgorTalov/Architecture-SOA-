@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewController" customModule="Architecture" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="TWo-vW-a3W" id="dMB-mv-Uim"/>
+                <outlet property="textField" destination="Dfw-vM-JGG" id="yOj-jA-4L1"/>
+                <outlet property="view" destination="br7-MQ-2pj" id="Vvz-XD-0Mr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="br7-MQ-2pj">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TWo-vW-a3W">
+                    <rect key="frame" x="0.0" y="20" width="375" height="601"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dfw-vM-JGG">
+                    <rect key="frame" x="8" y="629" width="315" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2a6-j8-Ffy">
+                    <rect key="frame" x="331" y="629" width="36" height="30"/>
+                    <state key="normal" title="Send"/>
+                    <connections>
+                        <action selector="sendButtonClicked" destination="-1" eventType="touchUpInside" id="EBE-u3-46m"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="2a6-j8-Ffy" firstAttribute="top" secondItem="TWo-vW-a3W" secondAttribute="bottom" constant="8" id="1Wn-oV-6uy"/>
+                <constraint firstItem="Dfw-vM-JGG" firstAttribute="leading" secondItem="zkA-mT-KOV" secondAttribute="leading" constant="8" id="3TB-JL-fi3"/>
+                <constraint firstItem="TWo-vW-a3W" firstAttribute="top" secondItem="zkA-mT-KOV" secondAttribute="top" id="ArY-l8-4KH"/>
+                <constraint firstItem="TWo-vW-a3W" firstAttribute="leading" secondItem="zkA-mT-KOV" secondAttribute="leading" id="Ggo-Fq-7aB"/>
+                <constraint firstItem="zkA-mT-KOV" firstAttribute="trailing" secondItem="2a6-j8-Ffy" secondAttribute="trailing" constant="8" id="YXu-rx-7Fh"/>
+                <constraint firstItem="zkA-mT-KOV" firstAttribute="bottom" secondItem="2a6-j8-Ffy" secondAttribute="bottom" constant="8" id="jbl-mE-Tbu"/>
+                <constraint firstItem="Dfw-vM-JGG" firstAttribute="top" secondItem="TWo-vW-a3W" secondAttribute="bottom" constant="8" id="lvC-wL-fxd"/>
+                <constraint firstItem="zkA-mT-KOV" firstAttribute="bottom" secondItem="Dfw-vM-JGG" secondAttribute="bottom" constant="8" id="pXq-hJ-Zku"/>
+                <constraint firstItem="2a6-j8-Ffy" firstAttribute="leading" secondItem="Dfw-vM-JGG" secondAttribute="trailing" constant="8" id="pqz-Lf-wmp"/>
+                <constraint firstItem="TWo-vW-a3W" firstAttribute="trailing" secondItem="zkA-mT-KOV" secondAttribute="trailing" id="xSC-3b-1Lq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="zkA-mT-KOV"/>
+        </view>
+    </objects>
+</document>

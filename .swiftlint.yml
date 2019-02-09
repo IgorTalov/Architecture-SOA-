@@ -1,0 +1,50 @@
+line_length: 180
+
+opt_in_rules:
+  - empty_count
+  - attributes
+  - array_init
+  - closure_end_indentation
+  - contains_over_first_not_nil
+  - discouraged_object_literal
+  - discouraged_optional_boolean
+  - empty_string
+  - explicit_init
+  - fatal_error_message
+  - first_where
+  - force_unwrapping
+  - implicit_return
+  - joined_default_parameter
+  - literal_expression_end_indentation
+  - lower_acl_than_parent
+  - multiline_arguments
+  - multiline_function_chains
+  - overridden_super_call
+  - pattern_matching_keywords
+  - private_action
+  - prohibited_super_call
+  - redundant_discardable_let
+  - required_enum_case
+  - single_test_class
+  - sorted_first_last
+  - sorted_imports
+  - switch_case_on_newline
+  - unneeded_parentheses_in_closure_argument
+  - untyped_error_in_catch
+  - vertical_parameter_alignment_on_call
+  - yoda_condition
+
+unused_optional_binding:
+  ignore_optional_try: true
+
+identifier_name:
+  excluded:
+  - id
+  - to
+  - at
+  - up
+  - my
+
+excluded:
+  - Carthage
+  - Pods
